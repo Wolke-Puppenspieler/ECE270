@@ -1,0 +1,45 @@
+Word guessing game
+You have 10 guesses
+
+Try # 1
+Guess a letter: d
+d---------
+
+Try # 2
+Guess a letter: h
+d---------
+
+Try # 3
+Guess a letter: g
+d---------
+
+Try # 4
+Guess a letter: i
+di--------
+
+Try # 5
+Guess a letter: f
+di--------
+
+Try # 6
+Guess a letter: s
+diss------
+
+Try # 7
+Guess a letter: n
+diss-n-n--
+
+Try # 8
+Guess a letter: j
+diss-n-n--
+
+Try # 9
+Guess a letter: l
+diss-n-n--
+
+Try # 10
+Guess a letter: e
+diss-n-n-e
+Sorry, you lost
+
+The mystery word was: dissonance

@@ -1,0 +1,76 @@
+Hangman Game
+
+Please enter a word for the player to guess: won
+
+Please enter how many guesses the player should get: 5
+Begin Game!
+
+Try # 1
+Guess a letter: w
+w--
+
+Try # 2
+Guess a letter: i
+|--------------------|
+|                    |
+|                  |   |
+|                  |   |
+|                    |
+|                |-------|
+|                |       |
+|                |       |
+|                |       |
+|                |       |
+|                 ------- 
+|
+|
+|
+|
+|
+|
+w--
+
+Try # 3
+Guess a letter: o
+|--------------------|
+|                    |
+|                  |   |
+|                  |   |
+|                    |
+|                |-------|
+|                |       |
+|                |       |
+|                |       |
+|                |       |
+|                 ------- 
+|
+|
+|
+|
+|
+|
+wo-
+
+Try # 4
+Guess a letter: n
+|--------------------|
+|                    |
+|                  |   |
+|                  |   |
+|                    |
+|                |-------|
+|                |       |
+|                |       |
+|                |       |
+|                |       |
+|                 ------- 
+|
+|
+|
+|
+|
+|
+won
+Congrats, You WIN!!
+
+Won in 4 guesses

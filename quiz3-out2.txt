@@ -1,0 +1,10 @@
+ECE270 Quiz 3, Quadratic Equation Solver
+This progam will solve quadratic equations of the type ax^2+bx+c
+
+Please enter the value of a:1.000000
+
+Please enter the value of b:5.000000
+
+Please enter the value of C:6.000000
+
+Real Roots - Answers:	-2.00 &	-3.00

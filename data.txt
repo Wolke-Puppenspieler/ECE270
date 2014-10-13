@@ -1,0 +1,32 @@
+Hangman Game
+
+Please enter a word for the player to guess: verify
+
+Please enter how many guesses the player should get: 10
+Begin Game!
+
+Try # 1
+Guess a letter: v
+v-----
+
+Try # 2
+Guess a letter: e
+ve----
+
+Try # 3
+Guess a letter: r
+ver---
+
+Try # 4
+Guess a letter: i
+veri--
+
+Try # 5
+Guess a letter: f
+verif-
+
+Try # 6
+Guess a letter: y
+verify
+Congrats, You WIN!!
+Won in 6 guesses
