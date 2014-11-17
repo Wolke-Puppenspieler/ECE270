@@ -1,0 +1,175 @@
+Carly Rae Jepson,Call Me Maybe-Single,2012,Pop,5.0,Alex Pappas
+Bryan Adams,The Best of Me,2002,Rock,5.0,Alex Pappas
+Falco,Falco Greatest Hits,1999,Techno,2.4,Alex Pappas
+Green Day,American Idiot,2004,Punk,3.4,Alex Pappas
+Imagine Dragons,Night Visions,2012,Alternative,5.0,Alex Pappas
+Mitch Leigh,Man of La Mancha,1973,Musical,4.0,Tim Hollman
+Paul O'Neill,Trans-Siberian Orchestra Beethoven's Last Night,2000,Symphonic Rock,4.5,Tim Hollman
+The Tallest Man on Earth,Shallow Grave,2011,Folk,4.8,Tim Hollman
+Jon Por Birgisson,Go,2010,Post-Rock,4.3,Tim Hollman
+Amadeus Mozart,Magic Flute,1791,Opera,5.0,Tim Hollman
+OneRepublic,Native,2014,Pop Rock,5.0,Rabab Alrayes
+Coldplay,X&Y,2005,Rock,4.0,Rabab Alrayes
+Frank Sinatra,The Very Best of Frank Sinatra,1997,Vocal Jazz,5.0,Rabab Alrayes
+We the Kings,We the Kings,2007,Pop Punk,5.0,Rabab Alrayes
+W.A.Mozart,The Very Best of Mozart,2005,Classical,4.8,Rabab Alrayes
+Nightwish,Imaginaerum,2011,Symphonic Power Metal,5.0,Justin Newman
+Incubite,Toxicum,2011,Aggrotech,4.5,Justin Newman
+Iron Maiden,A Matter of Life and Death,2006,Heavy Metal,5.0,Justin Newman
+Eluveitie,Origins,2014,Folk Metal,5.0,Justin Newman
+Unheilig,Lichter Der Stadt,2012,Neue Deutsche Harte,5.0,Justin Newman
+Nickelback,Photograph,2005,Rock,4.5,Rodolfo Lozano
+Nickelback,How You Remind Me,2001,Rock,4.0,Rodolfo Lozano
+Nickelback,Far Away,2005,Rock,2.1,Rodolfo Lozano
+Nickelback,Burn It To The Ground,2008,Rock,1.1,Rodolfo Lozano
+Nickelback,Hero,2005,Rock,0.9,Rodolfo Lozano
+Katy Perry,Dark Horse,2013,Pop,4.8,Fadi Baydoun
+Jessie Ware,Say You Love Me,2014,Pop,5.0,Fadi Baydoun
+Shakira,La La La,2014,Pop,4.9,Fadi Baydoun
+Katy Perry,Unconditionally,2013,Pop,4.6,Fadi Baydoun
+Enrique Iglesias,Bailando,2014,Pop,4.7,Fadi Baydoun
+Eminem,MMLP,2000,Rap,4.5,Khalil Hourani
+Eminem,MMLP2,2013,Rap,3.9,Khalil Hourani
+Lupe Fiasco,Lasers,2011,Pop,4.2,Khalil Hourani
+J.Cole,Born Sinner,2013,Rap,4.2,Khalil Hourani
+Dr.Dre,2001,1999,Rap,5.0,Khalil Hourani
+Matchbox Twenty,Exile On Mainstream,2007,Pop,5.0,Matthew Kosmalski
+Smallpools,Smallpools-EP,2013,Alternative,4.5,Matthew Kosmalski
+One-Republic,Native,2014,Pop,3.4,Matthew Kosmalski
+SoMo,SoMo,2014,R&B,4.0,Matthew Kosmalski
+Eminem,Recovery,2010,Rap,4.0,Matthew Kosmalski
+Kid Cudi,Man on the Moon,2009,Hip Hop,4.5,Ali Anani
+Kid Cudi,Indicud,2013,Hip Hop,4.0,Ali Anani
+The Weeknd,Trilogy,2012,R&B,4.5,Ali Anani
+The Weeknd,Kiss Land,2013,R&B,4.5,Ali Anani
+J.cole,Born Sinner,2013,Rap,4.5,Ali Anani
+50 Cent,The Massacre,2005,Rap,5.0,Hasan Khan
+Kanye West,Yeezus,2013,Hip Hop,2.7,Hasan Khan
+Eminem,Recovery,2010,Hip Hop,5.0,Hasan Khan
+50 Cent,Curtis,2007,Hip Hop,3.7,Hasan Khan
+T.I,T.I vs. T.I.P,2007,Hip Hop,4.1,Hasan Khan
+Lady Gaga,The Fame,2007,Pop,5.0,Jirjees Matti
+Chili Peppers,By The Way,2002,Rock,4.1,Jirjees Matti
+Akon,Konvicted,2008,Rap,3.9,Jirjees Matti
+Eminem,MMLP2,2013,Rap,4.3,Jirjees Matti
+Fray,Save a Life,2006,Rock,4.6,Jirjees Matti
+The Black Keys,EI Camino,2011,Rock,4.0,Erik Ignasiak
+The Doors,L.A.Woman,1971,Rock,4.5,Erik Ignasiak
+Linkin Park,Meteora,2003,Rock,5.0,Erik Ignasiak
+Toby Keith,Unleashed,2002,Country,4.8,Erik Ignasiak
+Zac Brown Band,The Foundation,2007,Country,5.0,Erik Ignasiak
+New Found Glory,Radiosuregery,2011,Pop Punk,3.5,Keith Shinn
+Memphis May Fire,The Hollow,2011,Hardcore,4.8,Keith Shinn
+Hoobastank,Hoobastank,2001,Rock,3.0,Keith Shinn
+This Wild Life,Clouded,2014,Acoustic,4.3,Keith Shinn
+Mayday Parade,A lesson in Romantics,2007,Pop Punk,5.0,Keith Shinn
+Canton Jones,Kingdom Business,2008,R&B,4.5,Jay Hogue
+Eminem,The Marshall Mathers LP2,2013,Rap,4.5,Jay Hogue
+2Pac,All Eyez on Me,2005,Rap,4.5,Jay Hogue
+Lecrae,Gravity,2012,Rap,4.5,Jay Hogue
+Imagine Dragons,Night Visions,2012,Rap,4.5,Jay Hogue
+Thirty Seconds to Mars,This is War,2009,Rock,5.0,Wesam Haddad
+Lil Wayne,The Carter IV,2011,Rap,4.0,Wesam Haddad
+Linkin Park,Minutes to Midnight,2007,Rock,4.5,Wesam Haddad
+Eminem,Recovery,2010,Hip Hop,5.0,Wesam Haddad
+Drake,Take Care,2010,Rap,5.0,Wesam Haddad
+Eminem,The Marshall Mathers LP,2000,Rap,4.0,Jeffery Kibbe
+50 Cent,Get Rich or Die Tryin',2003,Rap,5.0,Jeffery Kibbe
+Brad Paisley,Mud on the Tires,2003,Country,5.0,Jeffery Kibbe
+Kid Rock,Born Free,2010,Rock,5.0,Jeffery Kibbe
+Red Hot Chili Peppers,Californication,1999,Rock,4.5,Jeffery Kibbe
+Mayday Parde,Anywhere But Here,2009,Pop Punk,5.0,Isaac Lemus
+Sleeping With Sirens,With Ears to See and Eyes to Hear,2010,Post Hardcore,4.0,Isaac Lemus
+Sum 41,Underclass Hero,2007,Pop Punk,3.9,Isaac Lemus
+My Chemical Romance,The Black Parade,2006,Pop Punk,4.2,Isaac Lemus
+The Spill Canvas,One Fell Swoop,2005,Emo,4.5,Isaac Lemus
+Blackmill,Miracle,2011,Electronic,5.0,Zishen The
+Blackmill,Reach for Glory,2011,Electronic,5.0,Zishen The
+The Glitch Mob,Drink the Sea,2010,Electronic,5.0,Zishen The
+Ratatat,Classics,2006,Electronic,5.0,Zishen The
+Tycho,Dive,2011,Electronic,5.0,Zishen The
+The Black Keys,Brothers,2010,Rock,5.0,Kyle Drewno
+The Black Keys,El Camino,2011,Rock,4.0,Kyle Drewno
+Jack White,Blunderbuss,2012,Rock,4.5,Kyle Drewno
+Albert ,King With Stevie Ray Vaughan,1999,Blues,5.0,Kyle Drewno
+Buddy Guy,Damn Right I've Got The Blues,1991,Blues,4.5,Kyle Drewno
+Sonu Nigan,Kal Ho Na Ho,2010,Pop,4.5,Md Fazle
+Mohit Chauhan,Dil Ye bekarar,2011,Players,4.4,Md Fazle
+A great Big World,Single,2013,Pop,4.0,Md Fazle
+Imagine Dragons,Night Visions,2012,Alternative,4.8,Md Fazle
+OneRepublic,Native,2014,Pop,3.5,Md Fazle
+Blink 182,Neighborhoods,2001,Punk Rock,5.0,Previn Savaya
+Angels and Airwaves,Love,2010,Punk Rock,4.0,Previn Savaya
+Adept,Silence the World,2013,Metal,5.0,Previn Savaya
+Senses Fail,Let It Enfold You,2004,Post Hardcore,4.5,Previn Savaya
+Silverstein,When Broken is Easily Fixed,2003,Emo,3.9,Previn Savaya
+Eagles,Hotel California,1976,Rock,4.0,Matias Blanc
+The Fratellis,Costello Music,2006,Garage Rock,5.0,Matias Blanc
+Awolnation,Megalithic Symphony,2011,Indie Rock,5.0,Matias Blanc
+Lindsey Stirling,Lindsey Stirling,2012,Classical Crossover,5.0,Matias Blanc
+Arctic Monkeys,AM,2013,Indie Rock,4.0,Matias Blanc
+Akon,Trouble,2004,R&B,5.0,Mohamed Mohamed
+Akon,Knovict,2006,R&B,5.0,Mohamed Mohamed
+Eminem,The Slim Shady,1999,Rap,3.4,Mohamed Mohamed
+2Pac,Me Against The World,1995,Rap,4.2,Mohamed Mohamed
+Lil Wayne,The Carter III,2008,Rap,4.0,Mohamed Mohamed
+DMX,Its Dark and Hell Is Hot,1998,Rap,4.8,Paul Standte
+DMX,And Then There Was X,1999,Rap,5.0,Paul Standte
+DMX,Flesh of My Flesh Blood of my Blood,1999,Rap,4.5,Paul Standte
+J.Cole,Cold World,2011,Rap,4.5,Paul Standte
+J.Cole,Born Sinner,2013,Rap,4.7,Paul Standte
+Avicii,TRUE,2013,EDM,5.0,Robert Khattar
+Jason Aldean,Night Train,2012,Country,5.0,Robert Khattar
+Armin Van Buuren,Instense,2013,Trance,5.0,Robert Khattar
+Lady Antebellum,Golden,2013,Country,4.5,Robert Khattar
+Sam Hunt,Montevallo,2014,Country Pop,5.0,Robert Khattar
+Ronald Jenkees,Disorganized Fun,2009,Electronic,4.6,Brandon Smyth
+Deadmau5,Ghosts N Stuff,2009,House,4.2,Brandon Smyth
+Deadmau5,Professional Griefers,2012,House,4.3,Brandon Smyth
+Avicii,Levels,2012,Progressive House,4.4,Brandon Smyth
+The Beatles,Hey Jude,1970,Rock,5.0,Brandon Smyth
+Brand New,Deja Entendu,2003,Alternative Rock,5.0,David Lytle
+City and Colour,Sometimes,2005,Acoustic,4.0,David Lytle
+Sam Hunt,Montevallo,2014,Country,4.0,David Lytle
+Miguel,All I Want Is You,2010,R&B,5.0,David Lytle
+The Spill Canvas,One Fell Swoop,2005,Emo,5.0,David Lytle
+Lindsey Stirling,Shatter Me,2012,New Age,5.0,Nathanael Packwood
+G-Eazy,These Things Happen,2013,Rap,4.8,Nathanael Packwood
+A Day To Remember,Common Courtesy,2013,Punk,4.5,Nathanael Packwood
+Rise Against,Siren Song of the Counter Culture,2004,Rock,4.7,Nathanael Packwood
+Paramore,Riotl,2007,Alternative,4.6,Nathanael Packwood
+Kanye West,Stronger,2007,Rap,4.4,Thrar Hussein
+Nickelback,If Today Was Your Last Day,2010,Rock,4.1,Thrar Hussein
+Eminem,Lose Yourself,2007,Rap,4.3,Thrar Hussein
+J.Cole,Cold World,2011,Rap,4.2,Thrar Hussein
+Eminem,Not Afraid,2010,Rap,4.5,Thrar Hussein
+Fallulah,The Black Cat Neighbourhood,2010,Indie Pop,5.0,Jasmine Gerrish
+Clint Mansell,Requiem for a Dream,2000,Neoclassical,5.0,Jasmine Gerrish
+Nero,Welcome Reality,2011,Electro House,4.8,Jasmine Gerrish
+Lindsey Stirling,Shatter Me,2014,Trance,5.0,Jasmine Gerrish
+Mili,Mag Mell,2014,Electronic,5.0,Jasmine Gerrish
+Blink 182,Enema of the State,1999,Pop Punk,5.0,Daniel Chichila
+Blink 182,Take Off Your Pants and Jacket,2001,Pop Punk,4.8,Daniel Chichila
+New Found Glory,Sticks and Stones,2002,Pop Punk,4.8,Daniel Chichila
+Michael Jackson,Thriller,1982,Pop,5.0,Daniel Chichila
+Stevie Wonder,Innervisions,1973,Soul,5.0,Daniel Chichila
+Kanye West,Graduation,2007,Rap,4.0,Gary Neill
+System of A Down,Toxicity,2001,Rock,5.0,Gary Neill
+Chip Tha Ripper,The Cleveland Show,2009,Rap,5.0,Gary Neill
+Chip Tha Ripper,Gift Raps,2011,Rap,4.0,Gary Neill
+Kenny Chesney,When The Sun Goes Down,2004,Country,3.0,Gary Neill
+Native Deen,My Faith My Voice,2011,Rap,5.0,Abdulaziz Abuzir
+Native Deen,I Am Near,2011,Rap,5.0,Abdulaziz Abuzir
+Native Deen,Mercy to Mankind,2011,Rap,5.0,Abdulaziz Abuzir
+Native Deen,Small Deeds,2005,Rap,5.0,Abdulaziz Abuzir
+Native Deen,Zamilooni,2005,Rap,5.0,Abdulaziz Abuzir
+The Black Eyed Peas,Light up the Night,2010,Pop,5.0,Bashar Yousif
+The Black Eyed Peas,Boom Boom Pow,2009,Pop,5.0,Bashar Yousif
+The Black Eyed Peas,Imma Be,2009,Pop,5.0,Bashar Yousif
+The Black Eyed Peas,I Goota Feeling,2009,Pop,5.0,Bashar Yousif
+The Black Eyed Peas,Whenever,2009,Pop,5.0,Bashar Yousif
+Linkin Park,Hybrid,2000,Nu Metal,5.0,Jordan Stepchuk
+Styx,Styx Greatest Hits,1995,Rock,5.0,Jordan Stepchuk
+The Avett Brothers,I and Love and You,2009,Folk Rock,4.0,Jordan Stepchuk
+3 Doors Down,3 Doors Down,2008,Alternative Rock,4.0,Jordan Stepchuk
+Three Days Grace,Three Days Grace,2003,Alternative Metal,3.5,Jordan Stepchuk
