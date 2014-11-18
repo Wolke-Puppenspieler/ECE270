@@ -1,61 +1,113 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include<strings.h>
+#include<string.h>
 
 struct cd{
-	char artistName[];
-	char albumName[];
+	char artistName[50];
+	char albumName[50];
 	int year;
-	char genre[];
+	char genre[50];
 	float rating;
-	char studentName[];
+	char studentName[50];
 };
-char parseEntry(FILE *,int ,int );
+int fillStruct(FILE *,struct cd []);
+void setCD(FILE *,struct cd *);
+void printStructArray(FILE *,struct cd [],int );
 int main()
 {
-	int x;
-	struct cd cdList[200];
 	FILE *fp;
+	FILE *fout;
+    fout=fopen("quiz13.txt","w");
 	fp=fopen("MasterCDList.txt","r");
-	fgets(char 
-	for(i=0;i<numLines;i++)
-	{
-		for(j=0;j<6;j++)
-		{
-			switch(j)
-			{
-				case 0:
-					strcpy(parseEntry(fp,j,i),cdList[i].artistName);
-				break;
-				case 1:
-					strcpy(parseEntry(fp,j,i),cdList[i].albumName);
-				break;
-				case 2:
-					cdList[i].year=(int)parseEntry(fp,j,i);
-				break;
-				case 3:
-					strcpy(parseEntry(fp,j,i),cdList[i].genre);
-				break;
-				case 4:
-					cdList[i].rating=(float)parseEntry(fp,j,i);
-				break;
-				case 5:
-					strcpy(parseEntry(fp,j,i),cdList[i].studentName);
-				break ;
-				
-				
-				
-				
-//for(i=0;i<n;i++) where n is number of lines to skip
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-//write function to skip number of commas passed in: eg. n=0 would return 1st entry in line, n=1 would skip up to 1st comma and read next entry
+	int numLines=0;
+	struct cd CDList[175];
+	struct cd MyCD;
+    numLines=fillStruct(fp,CDList);
+    setCD(fout,&MyCD);
+	printStructArray(fout,CDList,numLines);
+	fclose(fp);
+	fclose(fout);
+	return 0;
+}
+int fillStruct(FILE *fp,struct cd CDList[175])
+{
+	int i=0;
+	char *token;
+	char year[5], rating[4], temp[100], comma[2]=",\0";
+
+    for(i=0;i<175;i++)
+    {
+        //printf("error\n %d",i); - testing
+
+        fgets(temp,sizeof(temp),fp);
+		token=strtok(temp,comma);
+		strcpy(CDList[i].artistName,strdup(token));
+
+        token=strtok(NULL,comma);
+        strcpy(CDList[i].albumName,strdup(token));
+
+        token=strtok(NULL,comma);
+        strcpy(year,strdup(token));
+        CDList[i].year=atoi(year);
+
+        token=strtok(NULL,comma);
+        strcpy(CDList[i].genre,strdup(token));
+
+        token=strtok(NULL,comma);
+        strcpy(rating,strdup(token));
+        CDList[i].rating=atof(rating);
+
+        token=strtok(NULL,comma);
+        strcpy(CDList[i].studentName,strdup(token));
+
+    }
+
+    return(i);
+}
+
+void setCD(FILE *fout,struct cd *MyCD)
+{
+    char year[5], rating[4];
+	printf("Enter the CD's artist: ");
+	gets(MyCD->artistName);
+	printf("Enter the album name: ");
+	gets(MyCD->albumName);
+	printf("Enter the year the album was released: ");
+	gets(year);
+	MyCD->year=atoi(year);
+	printf("Enter the album's genre: ");
+	gets(MyCD->genre);
+	printf("Enter your rating (0.0-5.0): ");
+	gets(rating);
+	MyCD->rating=atof(rating);
+	printf("Enter your name: ");
+	gets(MyCD->studentName);
+	printf("%s",MyCD->artistName);
+}
+void printStructArray(FILE *fout,struct cd CDList[],int n)
+{
+    int i;
+
+    printf("\n\tArtist\t \tAlbum\t \tYear\t \tGenre\t \tRating\t \tStudent\t");
+
+    for(i=0;i<175;i++)
+    {
+
+        printf("%s",CDList[i].artistName);
+        printf("\t\t%s\t",CDList[i].albumName);
+        printf("\t%d",CDList[i].year);
+        printf("\t%s",CDList[i].genre);
+        printf("\t%.1f",CDList[i].rating);
+        printf("\t%s",CDList[i].studentName);
+        printf("\n");
+
+        fprintf(fout,"%s \t",CDList[i].artistName);
+        fprintf(fout,"%s \t",CDList[i].albumName);
+        fprintf(fout,"%d \t",CDList[i].year);
+        fprintf(fout,"%s \t",CDList[i].genre);
+        fprintf(fout,"%.1f \t",CDList[i].rating);
+        fprintf(fout,"%s \t",CDList[i].studentName);
+        fprintf(fout,"\n");
+
+    }
+}
