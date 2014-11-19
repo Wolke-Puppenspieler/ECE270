@@ -283,6 +283,7 @@ void draw()
 			}
 	}while(selection!='Q'&&selection!='q');
 }
+
 //Displays function selection menu
 void menu()
 {
@@ -400,8 +401,12 @@ struct Path setPath()
     for(i=0;i<n;i++)
     {
         printf("\nPlease enter the x-coordinate for point #%d of your shape",i);
-        scanf("\n%d",*(x+i));
+        scanf("\n%f",x+i);
         fprintf(output,"\nPlease enter the center x-coordinate of your line: %.2f",x[i]);
+
+        printf("\nPlease enter the y-coordinate for point #%d of your shape",i);
+        scanf("\n%f",y+i);
+        fprintf(output,"\nPlease enter the center y-coordinate of your line: %.2f",y[i]);
     }
 
     path.n=n;
