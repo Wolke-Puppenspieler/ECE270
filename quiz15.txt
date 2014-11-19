@@ -11,25 +11,63 @@ Q:	To stop drawing
 
 Please enter your selection now:
 Please enter the desired amount of red for your shape's fill color (0-255): 0
-Please enter the desired amount of green for your shape's fill color (0-255): 255
-Please enter the desired amount of red for your shape's fill color (0-255): 200
+Please enter the desired amount of green for your shape's fill color (0-255): 0
+Please enter the desired amount of red for your shape's fill color (0-255): 0
 Please enter the desired opacity of shape's fill color (0.0-1.0): 1.000000
 Please enter the desired amount of red for your shape's stroke color (0-255): 0
 Please enter the desired amount of green for your shape's stroke color (0-255): 0
 Please enter the desired amount of blue for your shape's stroke color (0-255): 0
 Please enter the desired opacity of shape's stroke color (0.0-1.0): 1.000000
 Please enter the desired width of shape's stroke: 1
-Please enter the number of corners your shape will have: 5
-Please enter the center x-coordinate of your line: 5.00
-Please enter the center y-coordinate of your line: 5.00
-Please enter the center x-coordinate of your line: 10.00
-Please enter the center y-coordinate of your line: 10.00
-Please enter the center x-coordinate of your line: 10.00
-Please enter the center y-coordinate of your line: 5.00
-Please enter the center x-coordinate of your line: 5.00
-Please enter the center y-coordinate of your line: 10.00
-Please enter the center x-coordinate of your line: 15.00
-Please enter the center y-coordinate of your line: 6.00
+Please enter the center x-coordinate of your circle: 500.00
+Please enter the center y-coordinate of your circle: 500.00
+Please enter the radius of your circle: 110.00
+Welcome to Justin Newman's ECE270 Quiz #15 SVG drawing program
+
+Please make your selection from the following menu:
+
+L:	Draw a line
+C:	Draw a circle
+R:	Draw a rectangle
+P:	Define your own 1-10 pointed shape
+Q:	To stop drawing
+
+Please enter your selection now:
+Please enter the desired amount of red for your shape's fill color (0-255): 0
+Please enter the desired amount of green for your shape's fill color (0-255): 0
+Please enter the desired amount of red for your shape's fill color (0-255): 0
+Please enter the desired opacity of shape's fill color (0.0-1.0): 1.000000
+Please enter the desired amount of red for your shape's stroke color (0-255): 0
+Please enter the desired amount of green for your shape's stroke color (0-255): 0
+Please enter the desired amount of blue for your shape's stroke color (0-255): 0
+Please enter the desired opacity of shape's stroke color (0.0-1.0): 1.000000
+Please enter the desired width of shape's stroke: 1
+Please enter the center x-coordinate of your circle: 400.00
+Please enter the center y-coordinate of your circle: 400.00
+Please enter the radius of your circle: 60.00
+Welcome to Justin Newman's ECE270 Quiz #15 SVG drawing program
+
+Please make your selection from the following menu:
+
+L:	Draw a line
+C:	Draw a circle
+R:	Draw a rectangle
+P:	Define your own 1-10 pointed shape
+Q:	To stop drawing
+
+Please enter your selection now:
+Please enter the desired amount of red for your shape's fill color (0-255): 0
+Please enter the desired amount of green for your shape's fill color (0-255): 0
+Please enter the desired amount of red for your shape's fill color (0-255): 0
+Please enter the desired opacity of shape's fill color (0.0-1.0): 1.000000
+Please enter the desired amount of red for your shape's stroke color (0-255): 0
+Please enter the desired amount of green for your shape's stroke color (0-255): 0
+Please enter the desired amount of blue for your shape's stroke color (0-255): 0
+Please enter the desired opacity of shape's stroke color (0.0-1.0): 1.000000
+Please enter the desired width of shape's stroke: 1
+Please enter the center x-coordinate of your circle: 600.00
+Please enter the center y-coordinate of your circle: 400.00
+Please enter the radius of your circle: 60.00
 Welcome to Justin Newman's ECE270 Quiz #15 SVG drawing program
 
 Please make your selection from the following menu:

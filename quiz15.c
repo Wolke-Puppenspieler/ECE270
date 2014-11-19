@@ -344,11 +344,11 @@ struct Circle setCircle()
     struct Circle circle;
     printf("\nPlease enter the center x-coordinate of your circle");
     scanf("\n%f",&circle.cx);
-    fprintf(output,"\nPlease enter the center x-coordinate of your line: %.2f",circle.cx);
+    fprintf(output,"\nPlease enter the center x-coordinate of your circle: %.2f",circle.cx);
 
-    printf("\nPlease enter the center y-coordinate of your line");
+    printf("\nPlease enter the center y-coordinate of your circle");
     scanf("\n%f",&circle.cy);
-    fprintf(output,"\nPlease enter the center y-coordinate of your line: %.2f",circle.cy);
+    fprintf(output,"\nPlease enter the center y-coordinate of your circle: %.2f",circle.cy);
 
     printf("\nPlease enter the radius of your circle");
     scanf("\n%f",&circle.r);
