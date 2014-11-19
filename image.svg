@@ -1,5 +1,4 @@
 <?xml version='1.0' standalone='no'?>
 <svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' width = '1000' height = '1000'>
-    <circle cx = '300.000000' cy = '300.000000' r = '100.000000' fill = 'rgb(255, 0, 0)' fill-opacity = '1.000000' stroke = 'rgb(0, 0, 0)' stroke-opacity = '1.000000' stroke-width = '2' />
-    <path d ='M50.000000 100.000000 L20.000000 40.000000 L100.000000 30.000000 z' fill = 'rgb(255, 0, 0)' fill-opacity = '1.000000' stroke = 'rgb(0, 0, 0)' stroke-opacity = '1.000000' stroke-width = '2' />
+    <rect x = '0.000000' y = '168728878714947760000000000000000000000.000000' width = '0.000000' height = '0.000000' fill = 'rgb(55, 55, 55)' fill-opacity = '1.000000' stroke = 'rgb(55, 55, 55)' stroke-opacity = '1.000000' stroke-width = '1077936128' />
 </svg>

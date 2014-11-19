@@ -4,6 +4,7 @@
 //START snippet of SVG code on canvas
 //Global Variables ............................
 FILE *fp;            //File pointer for svg image
+FILE *output;
 
 char fileName[] = "image.svg";
 
@@ -32,6 +33,12 @@ struct Rectangle{
 	float height;  //vertical size of rectangle
 };
 
+struct Path{
+	int n;     //number of points in path
+	float x[10]; //array of x-coordinates
+	float y[10]; //array of y-coordinates
+};
+
 struct Fill{
 	int red;   //set red tone 0-255
 	int green; //set green tone 0-255
@@ -47,12 +54,6 @@ struct Stroke{
 	int width; //set opacity 0.0-1.0
 };
 
-struct Path{
-	int n;     //number of points in path
-	float x[10]; //array of x-coordinates
-	float y[10]; //array of y-coordinates
-};
-
 //I'll just declare these down here so the program actually knows what's up
 //Replaces stroke and fill element declarations from canvas code
 struct Fill fill;
@@ -60,27 +61,37 @@ struct Stroke stroke;
 
 //Prototypes for functions from canvas SVG code
 float rand_float();
-void setFill(int , int , int ,float );
-void setStroke(int , int , int ,float ,int );
-void drawCircle(struct Circle );
+void setFill();
+void setStroke();
 void drawLine(struct Line );
+void drawCircle(struct Circle );
 void drawRectangle(struct Rectangle );
 void drawPath(struct Path );
 void writeSVGHeader(char [], int , int );
 void writeSVGFooter();
 void draw();
+void menu();
+struct Line setLine();
+struct Circle setCircle();
+struct Rectangle setRectangle();
+struct Path setPath();
 
 /*  MAIN  */
 
 int main()
 {
     srand(time(NULL));
+    output=fopen("quiz15.txt","w");
 
     writeSVGHeader(fileName, imWidth, imHeight);
+
+    menu();
 
     draw();
 
     writeSVGFooter();
+
+    fclose(output);
 
     return 0;
 }
@@ -94,33 +105,50 @@ float rand_float()
 
 /*  SET FILL  */
 
-void setFill(int red_in, int green_in, int blue_in, float opacity_in)
+void setFill()
 {
-    fill.red = red_in;
-    fill.green = green_in;
-    fill.blue = blue_in;
-    fill.opacity = opacity_in;
+    //fill.red = red_in;
+    printf("Please enter the desired amount of red for your shape's fill color (0-255)");
+    scanf("\n%d",&fill.red);
+    fprintf(output,"Please enter the desired amount of red for your shape's fill color (0-255): %d",fill.red);
+    //fill.green = green_in;
+    printf("Please enter the desired amount of green for your shape's fill color (0-255)");
+    scanf("\n%d",&fill.green);
+    fprintf(output,"Please enter the desired amount of green for your shape's fill color (0-255): %d",fill.green);
+    //fill.blue = blue_in;
+    printf("Please enter the desired amount of blue for your shape's fill color (0-255)");
+    scanf("\n%d",&fill.blue);
+    fprintf(output,"Please enter the desired amount of red for your shape's fill color (0-255): %d",fill.blue);
+    //fill.opacity = opacity_in;
+    printf("Please enter the desired opacity of your shape's fill color (0.0-1.0)");
+    scanf("\n%f",&fill.opacity);
+    fprintf(output,"Please enter the desired opacity of shape's fill color (0.0-1.0): %f",fill.opacity);
 }
 
 /*  SET STROKE  */
 
-void setStroke(int red_in, int green_in, int blue_in, float opacity_in, int width_in)
+void setStroke()
 {
-    stroke.red = red_in;
-    stroke.green = green_in;
-    stroke.blue = blue_in;
-    stroke.opacity = opacity_in;
-    stroke.width = width_in;
-}
-
-/*  DRAW CIRCLE  */
-
-void drawCircle(struct Circle circle)
-{
-    fprintf(fp,"\n    <circle cx = '%f' cy = '%f' r = '%f'", circle.cx, circle.cy, circle.r);
-    fprintf(fp," fill = 'rgb(%d, %d, %d)' fill-opacity = '%f'", fill.red, fill.green, fill.blue, fill.opacity);
-    fprintf(fp," stroke = 'rgb(%d, %d, %d)' stroke-opacity = '%f'", stroke.red, stroke.green, stroke.blue, stroke.opacity);
-    fprintf(fp," stroke-width = '%d' />", stroke.width);
+    //stroke.red = red_in;
+    printf("Please enter the desired amount of red for your shape's stroke color (0-255)");
+    scanf("\n%d",&stroke.red);
+    fprintf(output,"Please enter the desired amount of red for your shape's stroke color (0-255): %d",stroke.red);
+    //stroke.green = green_in;
+    printf("Please enter the desired amount of green for your shape's stroke color (0-255)");
+    scanf("\n%d",&stroke.green);
+    fprintf(output,"Please enter the desired amount of green for your shape's stroke color (0-255): %d",stroke.green);
+    //stroke.blue = blue_in;
+    printf("Please enter the desired amount of blue for your shape's stroke color (0-255)");
+    scanf("\n%d",&stroke.blue);
+    fprintf(output,"Please enter the desired amount of blue for your shape's stroke color (0-255): %d",stroke.blue);
+    //stroke.opacity = opacity_in;
+    printf("Please enter the desired opacity of your shape's stroke color (0.0-1.0)");
+    scanf("\n%f",&stroke.opacity);
+    fprintf(output,"Please enter the desired opacity of shape's stroke color (0.0-1.0): %f",stroke.opacity);
+    //stroke.width = width_in;
+    printf("Please enter the desired width of your shape's stroke");
+    scanf("\n%f",&stroke.width);
+    fprintf(output,"Please enter the desired width of shape's stroke: %f",stroke.width);
 }
 
 /*  DRAW LINE  */
@@ -128,6 +156,17 @@ void drawCircle(struct Circle circle)
 void drawLine(struct Line line)
 {
     fprintf(fp,"\n    <line x1 = '%f' y1 = '%f' x2 = '%f' y2 = '%f'", line.x1, line.y1, line.x2, line.y2);
+    fprintf(fp," stroke = 'rgb(%d, %d, %d)' stroke-opacity = '%f'", stroke.red, stroke.green, stroke.blue, stroke.opacity);
+    fprintf(fp," stroke-width = '%d' />", stroke.width);
+}
+
+
+/*  DRAW CIRCLE  */
+
+void drawCircle(struct Circle circle)
+{
+    fprintf(fp,"\n    <circle cx = '%f' cy = '%f' r = '%f'", circle.cx, circle.cy, circle.r);
+    fprintf(fp," fill = 'rgb(%d, %d, %d)' fill-opacity = '%f'", fill.red, fill.green, fill.blue, fill.opacity);
     fprintf(fp," stroke = 'rgb(%d, %d, %d)' stroke-opacity = '%f'", stroke.red, stroke.green, stroke.blue, stroke.opacity);
     fprintf(fp," stroke-width = '%d' />", stroke.width);
 }
@@ -185,27 +224,189 @@ void writeSVGFooter()
 
 void draw()
 {
-	struct Path path;
+	struct Line line;
 	struct Circle circle;
 	struct Rectangle rect;
-	struct Line line;
-	char yn='y';
-	do{
+	struct Path path;
+	char selection;
 
-	}while(yn!='n');
-    int i,n=3;
-    setFill(255, 0, 0, 1.0);
-    setStroke(0, 0, 0, 1.0, 2);
+	do
+    {
+		scanf("\n%c",&selection);
 
-	circle.cx=300;
-	circle.cy=300;
-	circle.r=100;
+		switch(selection)
+		{
+			case 'L':case 'l':
+				system("cls");
+				setFill();
+                setStroke();
+				line=setLine();
+				drawLine(line);
+				menu();
+			break;
+			case 'C':case 'c':
+				system("cls");
+				setFill();
+                setStroke();
+				circle=setCircle();
+                drawCircle(circle);
+                menu();
+			break;
+			case 'R':case 'r':
+				system("cls");
+                setFill();
+                setStroke();
+				rect=setRectangle();
+				drawRectangle(rect);
+				menu();
+			break;
+			case 'P':case 'p':
+				system("cls");
+				setFill();
+                setStroke();
+				path=setPath();
+				drawPath(path);
+				menu();
+			break;
+			case 'Q':case 'q':
+				system("cls");
+				printf("\nProgram terminating...\nenjoy your drawing");
+				fprintf(output,"\nProgram terminating...\nenjoy your drawing");
 
-	drawCircle(circle);
+				printf("\nYour drawing can be found in image.svg in the same folder as this program");
+				fprintf(output,"\nYour drawing can be found in image.svg in the same folder as this program");
+			break;
+			default :
+				system("cls");
+				printf("\nPlease make a valid selection from the following menu:\n");
+				fprintf(output,"\nPlease make a valid selection from the following menu:\n");
+				menu();
+			}
+	}while(selection!='Q'&&selection!='q');
+}
 
-    float x[3] = {50.0, 20.0, 100.0};
-    float y[3] = {100.0, 40.0, 30.0};
-	path.n=n;
+void menu()
+{
+    //Displays function selection menu
+    printf("\nWelcome to Justin Newman's ECE270 Quiz #15 SVG drawing program");
+    fprintf(output,"\nWelcome to Justin Newman's ECE270 Quiz #15 SVG drawing program");
+
+    printf("\n\nPlease make your selection from the following menu:");
+    fprintf(output,"\n\nPlease make your selection from the following menu:");
+
+    printf("\n\nL:\tDraw a line");
+    fprintf(output,"\n\nL:\tDraw a line");
+
+    printf("\nC:\tDraw a circle");
+    fprintf(output,"\nC:\tDraw a circle");
+
+    printf("\nR:\tDraw a rectangle");
+    fprintf(output,"\nR:\tDraw a rectangle");
+
+    printf("\nP:\tDefine your own 1-10 pointed shape");
+    fprintf(output,"\nP:\tDefine your own 1-10 pointed shape");
+
+    printf("\nQ:\tTo stop drawing");
+    fprintf(output,"\nQ:\tTo stop drawing");
+
+    printf("\n\nPlease enter your selection now:");
+    fprintf(output,"\n\nPlease enter your selection now:");
+}
+
+//allows the user to set the paramters of a line to be drawn
+struct Line setLine()
+{
+    struct Line line;
+
+    printf("Please enter the starting x-coordinate of your line");
+    scanf("\n%f",&line.x1);
+    fprintf(output,"Please enter the starting x-coordinate of your line: %.2f",line.x1);
+
+    printf("Please enter the starting y-coordinate of your line");
+    scanf("\n%f",&line.y1);
+    fprintf(output,"Please enter the starting y-coordinate of your line: %.2f",line.y1);
+
+    printf("Please enter the ending x-coordinate of your line");
+    scanf("\n%f",&line.x2);
+    fprintf(output,"Please enter the ending x-coordinate of your line: %.2f",line.x2);
+
+    printf("Please enter the ending y-coordinate of your line");
+    scanf("\n%f",&line.y2);
+    fprintf(output,"Please enter the ending y-coordinate of your line: %.2f",line.y2);
+
+    system("cls");
+
+    return(line);
+};
+//allows the user to set the paramters of a circle to be drawn
+struct Circle setCircle()
+{
+    struct Circle circle;
+    printf("Please enter the center x-coordinate of your circle");
+    scanf("\n%f",&circle.cx);
+    fprintf(output,"Please enter the center x-coordinate of your line: %.2f",circle.cx);
+
+    printf("Please enter the center y-coordinate of your line");
+    scanf("\n%f",&circle.cy);
+    fprintf(output,"Please enter the center y-coordinate of your line: %.2f",circle.cy);
+
+    printf("Please enter the radius of your circle");
+    scanf("\n%f",&circle.r);
+    fprintf(output,"Please enter the radius of your circle: %.2f",circle.r);
+
+    system("cls");
+
+};
+
+//allows the user to set the paramters of a rectangle to be drawn
+struct Rectangle setRectangle()
+{
+    struct Rectangle rect;
+
+    printf("Please enter the x-coordinate of the upper left corner of your rectangle");
+    scanf("\n%f",&rect.xCorner);
+    fprintf(output,"Please enter the x-coordinate of the upper left corner of your rectangle%.2f",rect.xCorner);
+
+    printf("Please enter the y-coordinate of the upper left corner of your rectangle");
+    scanf("\n%f",&rect.yCorner);
+    fprintf(output,"Please enter the y-coordinate of the upper left corner of your rectangle%.2f",rect.yCorner);
+
+    printf("Please enter the width of your rectangle");
+    scanf("\n%f",&rect.width);
+    fprintf(output,"Please enter the width of your rectangle%.2f",rect.width);
+
+    printf("Please enter the height of your rectangle");
+    scanf("\n%f",&rect.height);
+    fprintf(output,"Please enter the height of your rectangle%.2f",rect.height);
+
+    system("cls");
+
+};
+
+
+
+
+//allows the user to set the paramters of a path to be drawn
+struct Path setPath()
+{
+    struct Path path;
+    int i,n;
+
+    printf("Please enter the number of corners your shape will have (1-10)");
+    scanf("\n%d",&n);
+    fprintf(output,"Please enter the number of corners your shape will have: %d",n);
+
+    float x[n];
+    float y[n];
+
+    for(i=0;i<n;i++)
+    {
+        printf("Please enter the x-coordinate for point #%d of your shape",i);
+        scanf("\n%d",*(x+i));
+        fprintf(output,"Please enter the center x-coordinate of your line: %.2f",x[i]);
+    }
+
+    path.n=n;
 
     for(i=0;i<n;i++)
     {
@@ -213,5 +414,5 @@ void draw()
         path.y[i]=y[i];
     }
 
-	drawPath(path);
-}
+    system("cls");
+};

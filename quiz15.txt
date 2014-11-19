@@ -1,0 +1,26 @@
+
+Welcome to Justin Newman's ECE270 Quiz #15 SVG drawing program
+
+Please make your selection from the following menu:
+
+L:	Draw a line
+C:	Draw a circle
+R:	Draw a rectangle
+P:	Define your own 1-10 pointed shape
+Q:	To stop drawing
+
+Please enter your selection now:Please enter the desired amount of red for your shape's fill color (0-255)Please enter the desired amount of green for your shape's fill color (0-255)Please enter the desired amount of red for your shape's fill color (0-255)Please enter the desired opacity of shape's fill color (0.0-1.0)Please enter the desired amount of red for your shape's stroke color (0-255)Please enter the desired amount of green for your shape's stroke color (0-255)Please enter the desired amount of blue for your shape's stroke color (0-255)Please enter the desired opacity of shape's stroke color (0.0-1.0)Please enter the desired width of shape's strokePlease enter the x-coordinate of the upper left corner of your rectangle55.00Please enter the y-coordinate of the upper left corner of your rectangle33.00Please enter the width of your rectangle67.00Please enter the height of your rectangle67.00
+Welcome to Justin Newman's ECE270 Quiz #15 SVG drawing program
+
+Please make your selection from the following menu:
+
+L:	Draw a line
+C:	Draw a circle
+R:	Draw a rectangle
+P:	Define your own 1-10 pointed shape
+Q:	To stop drawing
+
+Please enter your selection now:
+Program terminating...
+enjoy your drawing
+Your drawing can be found in image.svg in the same folder as this program
