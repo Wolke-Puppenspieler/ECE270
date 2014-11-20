@@ -1,0 +1,69 @@
+/* Justin Newman
+Letter Guessing Game
+ECE 270 9/28/14
+*/
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+int main()
+	{
+	
+		char word[ ]="dissonance", display[strlen(word)], guess; //word[ ]="dissonance", display[ ]="----------; 
+		int i=0, j=0, correctCounter=0, guessCounter=0;
+		
+		printf("Word guessing game");
+		printf("\nYou have 10 guesses");
+		
+		
+		for(j=0;j<strlen(word);j++)
+			{
+				display[j]='-';
+			}
+		display[strlen(word)]='\0';
+		while((correctCounter<10)&&(guessCounter<10))
+			
+			{
+				
+				guessCounter++;
+				
+				printf("\n\nTry # %d",guessCounter);
+				
+				printf("\nGuess a letter: ");
+				scanf("\n%c",&guess);
+				
+				for (i=0;i<11;i++)
+				
+					{
+						
+						
+						if ((guess==word[i])&&(display[i]=='-'))
+						
+							{
+							
+								display[i]=guess;
+								correctCounter=correctCounter+1;
+							
+							}
+					
+					}
+					
+					printf("\n%s",display);
+				
+				}
+				
+		if (correctCounter==10)
+			{
+				printf("\nCongrats, You WIN!!");
+				printf("\nWon in %d guesses", guessCounter);
+			}
+		else
+			{
+				printf("\nSorry, you lost");
+				printf("\n\nThe mystery word was: %s",word);
+			}	
+		return 0;
+	
+	}
+					 

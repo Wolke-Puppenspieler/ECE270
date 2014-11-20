@@ -1,0 +1,36 @@
+/*notes9/24/14
+ece270*/
+
+#include<stdio.h>
+#include<stdlib.h>
+
+//array syntax
+int main()
+	{
+		int p[10];
+		//type=int dimension=10
+		
+		/* this declaration creates space in memory for 10 integers in the array, each is an "element" of the array
+		*/
+		int x[5], i;
+		
+		 x[0]=65;
+		 x[1]=22;
+		 x[2]=10;
+		 x[3]=31;
+		 x[4]=47;
+		 
+		  //OR
+		  //int x[5]={65,22,10,31,47};
+		  //print array to screen
+		  
+		   for(i=0;i<5;i++)
+		   	{
+		   		printf("x[%d]:%d",i,x[i]);
+		   	}
+		   	
+		  char word[9]={'b','a','s','e','b','a','l','l','\o'}; 
+		  
+		  printf("\n my word:%s",word);
+		  
+		  

@@ -1,0 +1,43 @@
+/*Justin Newman
+ECE270 9/19/14
+Quiz #3:
+Quadratic Equation Solver*/
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+
+int main()
+	{
+		double determinant, output, varA, varB, varC;
+		
+		printf("ECE270 Quiz 3, Quadratic Equation Solver");
+		printf("This progam will solve quadratic equations of the type ax^2 + bx +c");
+		
+		printf("\n\nPlease enter the value of a:");
+		scanf("\n%f",&varA);
+		
+		printf("\n\nPlease enter the value of b:");
+		scanf("\n%f",&varB);
+		
+		printf("\n\nPlease enter the value of c:");
+		scanf("\n%f",&varC);
+		
+		
+		determinant=varB*varB-4*varA*varC;
+		
+		if (determinant>=0)
+			{
+				output=sqrt(determinant);
+				printf("The solutions to your quadratic equation are:\n%.2lf \nand\n%.2lf",(-varB+output)/2*varA,(-varB-output)/2*varA);
+			}
+		else
+			{
+				output=sqrt(-determinant);
+				printf("The solutions to your quadratic equation are:\n %.2f + j%.2lf \nand\n%.2f -j%.2lf",(-varB,output)/2*varA,(-varB,-output)/2*varA);
+			}
+			
+			return 0;
+			
+	}
+				  
