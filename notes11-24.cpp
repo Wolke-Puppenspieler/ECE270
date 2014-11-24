@@ -103,4 +103,33 @@ main()
  	zptr->display();
  }
  
- 
+/* printing to screen: cout function
+
+ main()
+ {
+ 	cout<<"Hello World";
+ 	int x=5;
+ 	float y=10.5;
+ 	cout<<"\nx:"<<x<<y:"<<y<
+ }
+ */
+  string class:
+  #include<string>
+  
+   =,==,!=,<,> work as expected
+   string s1, s2, s;
+   s1="Hello";
+   s2="There";
+   
+    s=s1+" "+s2; //Hello There
+    if(s1==s2)  printf("same");
+    else printf("different");
+    
+  //String Methods
+  1. length()
+  2 c_str()
+  3 at(i)
+  4 substr(i,n)
+  5 insert(i,"hi")
+  6 find("hi",10)
+  
