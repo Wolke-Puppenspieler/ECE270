@@ -1,22 +1,20 @@
 /*Justin Newman
 Quiz 17 ECE270
 11/24/14*/
+#include<stdio.h>
+#include <iostream>
+using namespace std;
 
-Rectangle::Rectangle(FILE *fp1, FILE *fp2, float x_in, float y_in, float width_in, float height_in)
+Rectangle::Rectangle(float x_in, float y_in, float width_in, float height_in)
 {
-	svg=fp1;
-	output=fp2;
 	xCorner=x_in;
 	yCorner=y_in;
 	width=width_in;
 	height=height_in;
 }
 
-Rectangle::Rectangle(FILE *fp1, FILE *fp2)
+Rectangle::Rectangle()
 {
-	svg=fp1;
-	output=fp2;
-	
 	cout <<"\nPlease enter the x-coordinate for the upper left corner of your Rectangle";
     cin >> xCorner;
     fprintf(output,"\nPlease enter the x-coordinate for the upper left corner of your Rectangle: %.2f",xCorner);
@@ -34,8 +32,9 @@ Rectangle::Rectangle(FILE *fp1, FILE *fp2)
     fprintf(output,"\nPlease enter the height of your Rectangle: %.2f",height);
 
     system("cls");
+}
 
-void Rectangle::Display()
+void Rectangle::display()
 {
 	cout << "\nx corner:" << xCorner;
 	cout << "\ny corner:" << yCorner;

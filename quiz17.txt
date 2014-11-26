@@ -1,0 +1,66 @@
+
+Welcome to Justin Newman's ECE270 Quiz #15 SVG drawing program
+
+Please make your selection from the following menu:
+
+L:	Draw a line
+C:	Draw a circle
+R:	Draw a rectangle
+P:	Define your own shape
+Q:	To stop drawing
+
+Please enter your selection now:
+Please enter the desired amount of red for your shape's fill color (0-255): 55
+Please enter the desired amount of green for your shape's fill color (0-255): 55
+Please enter the desired amount of red for your shape's fill color (0-255): 55
+Please enter the desired opacity of shape's fill color (0.0-1.0): 1.000000
+Please enter the desired amount of red for your shape's Stroke color (0-255): 0
+Please enter the desired amount of green for your shape's Stroke color (0-255): 0
+Please enter the desired amount of red for your shape's Stroke color (0-255): 0
+Please enter the desired opacity of shape's Stroke color (0.0-1.0): 1.00
+Please enter the desired width of shape's Stroke: 2
+Please enter the number of points in your Path: 15
+Please enter the x-coordinate for point #0 of your Path: 4.00
+Please enter the y-coordinate for point #0 of your Path: 4.00
+Please enter the x-coordinate for point #1 of your Path: 5.00
+Please enter the y-coordinate for point #1 of your Path: 5.00
+Please enter the x-coordinate for point #2 of your Path: 6.00
+Please enter the y-coordinate for point #2 of your Path: 6.00
+Please enter the x-coordinate for point #3 of your Path: 7.00
+Please enter the y-coordinate for point #3 of your Path: 7.00
+Please enter the x-coordinate for point #4 of your Path: 8.00
+Please enter the y-coordinate for point #4 of your Path: 8.00
+Please enter the x-coordinate for point #5 of your Path: 9.00
+Please enter the y-coordinate for point #5 of your Path: 9.00
+Please enter the x-coordinate for point #6 of your Path: 0.00
+Please enter the y-coordinate for point #6 of your Path: 0.00
+Please enter the x-coordinate for point #7 of your Path: 14.00
+Please enter the y-coordinate for point #7 of your Path: 46.00
+Please enter the x-coordinate for point #8 of your Path: 34.00
+Please enter the y-coordinate for point #8 of your Path: 87.00
+Please enter the x-coordinate for point #9 of your Path: 43.00
+Please enter the y-coordinate for point #9 of your Path: 58.00
+Please enter the x-coordinate for point #10 of your Path: 12.00
+Please enter the y-coordinate for point #10 of your Path: 86.00
+Please enter the x-coordinate for point #11 of your Path: 444.00
+Please enter the y-coordinate for point #11 of your Path: 653.00
+Please enter the x-coordinate for point #12 of your Path: 23.00
+Please enter the y-coordinate for point #12 of your Path: 764.00
+Please enter the x-coordinate for point #13 of your Path: 356.00
+Please enter the y-coordinate for point #13 of your Path: 643.00
+Please enter the x-coordinate for point #14 of your Path: 235.00
+Please enter the y-coordinate for point #14 of your Path: 333.00
+Welcome to Justin Newman's ECE270 Quiz #15 SVG drawing program
+
+Please make your selection from the following menu:
+
+L:	Draw a line
+C:	Draw a circle
+R:	Draw a rectangle
+P:	Define your own shape
+Q:	To stop drawing
+
+Please enter your selection now:
+Program terminating...
+enjoy your drawing
+Your drawing can be found in image.svg in the same folder as this program

@@ -4,14 +4,12 @@ ECE270 Quiz 17
 
 class Path{
 	public:
-		FILE *svg;
-		FILE *output;
 		int n;     //number of points in path
 		float *x; //array of x-coordinates
 		float *y; //array of y-coordinates
 		
-		Path(FILE *fp1, FILE *fp2, int n, float *x_in, float *y_in);
-		Path(FILE *fp1, FILE *fp2);
+		Path(int n, float *x_in, float *y_in);
+		Path();
 		void display();
 		void setPath();
 		void setPoint(int n_in, float x_in, float y_in);

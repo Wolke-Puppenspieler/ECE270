@@ -1,6 +1,4 @@
 <?xml version='1.0' standalone='no'?>
 <svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' width = '1000' height = '1000'>
-    <circle cx = '500.000000' cy = '500.000000' r = '110.000000' fill = 'rgb(0, 0, 0)' fill-opacity = '1.000000' stroke = 'rgb(0, 0, 0)' stroke-opacity = '1.000000' stroke-width = '1' />
-    <circle cx = '400.000000' cy = '400.000000' r = '60.000000' fill = 'rgb(0, 0, 0)' fill-opacity = '1.000000' stroke = 'rgb(0, 0, 0)' stroke-opacity = '1.000000' stroke-width = '1' />
-    <circle cx = '600.000000' cy = '400.000000' r = '60.000000' fill = 'rgb(0, 0, 0)' fill-opacity = '1.000000' stroke = 'rgb(0, 0, 0)' stroke-opacity = '1.000000' stroke-width = '1' />
+    <path d ='4.000000 4.000000 5.000000 5.000000 6.000000 6.000000 7.000000 7.000000 8.000000 8.000000 9.000000 9.000000 0.000000 0.000000 14.000000 46.000000 34.000000 87.000000 43.000000 58.000000 12.000000 86.000000 444.000000 653.000000 23.000000 764.000000 356.000000 643.000000 L235.000000 333.000000 z' fill = 'rgb(55, 55, 55)' fill-opacity = '1.000000' stroke = 'rgb(0, 0, 0)' stroke-opacity = '1.000000' stroke-width = '2' />
 </svg>

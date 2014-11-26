@@ -1,11 +1,13 @@
 /*Justin Newman
 Quiz 17 ECE270
 11/24/14*/
+#include <iostream>
+#include "./quiz17.h"
 
-Path::Path(FILE *fp1, FILE *fp2, int n_in; float *x_in, float *y_in)
+using namespace std;
+
+Path::Path(int n_in, float *x_in, float *y_in)
 {
-	svg=fp1;
-	output=fp2;
 	n=n_in;
 	x=x_in;
 	y=y_in;
@@ -13,25 +15,23 @@ Path::Path(FILE *fp1, FILE *fp2, int n_in; float *x_in, float *y_in)
 	y=(float*)calloc(n_in*sizeof(float));
 }
 
-Path::Path(FILE *fp1, FILE *fp2);
+Path::Path()
 {
-	svg=fp1;
-	output=fp2;
 	int i;
-	
+
 	cout << "\nPlease enter the number of points in your path";
     cin >> n;
 	fprintf(output,"\nPlease enter the number of points in your Path: %d",n);
-	
+
 	x=(float*)calloc(n*sizeof(float));
 	y=(float*)calloc(n*sizeof(float));
-	
+
 	for(i=0;i<n;i++)
 	{
 		cout <<"\nPlease enter the x-coordinate for point #" << i << " of your path";
 		cin >> x[i];
 		fprintf(output,"\nPlease enter the x-coordinate for point #%d of your Path: %.2f",i,x[i]);
-		
+
 		cout <<"\nPlease enter the y-coordinate for point #" << i << " of your path";
 		cin >> y[i];
 		fprintf(output,"\nPlease enter the y-coordinate for point #%d of your Path: %.2f",i,y[i]);
@@ -40,13 +40,13 @@ Path::Path(FILE *fp1, FILE *fp2);
     system("cls");
 }
 
-void Path::Display();
+void Path::display();
 {
 	for(i=0;i<n;i++)
 	{
 		cout <<"\nThe x-coordinate for point #" << i << " of your path is:" << x[i];
 		fprintf(output,"\nThe x-coordinate for point #%d of your Path is: %.2f",i,x[i]);
-		
+
 		cout <<"\nThe y-coordinate for point #" << i << " of your path is" << y[i];
 		fprintf(output,"\nThe y-coordinate for point #%d of your Path is: %.2f",i,y[i]);
 	}
@@ -55,20 +55,20 @@ void Path::Display();
 void Path::setPath()
 {
 	int i;
-	
+
 	cout << "\nPlease enter the number of points in your path";
     cin >> n;
 	fprintf(output,"\nPlease enter the number of points in your Path: %d",n);
-	
+
 	x=(float*)calloc(n*sizeof(float));
 	y=(float*)calloc(n*sizeof(float));
-	
+
 	for(i=0;i<n;i++)
 	{
 		cout <<"\nPlease enter the x-coordinate for point #" << i << " of your path";
 		cin >> x[i];
 		fprintf(output,"\nPlease enter the x-coordinate for point #%d of your Path: %.2f",i,x[i]);
-		
+
 		cout <<"\nPlease enter the y-coordinate for point #" << i << " of your path";
 		cin >> y[i];
 		fprintf(output,"\nPlease enter the y-coordinate for point #%d of your Path: %.2f",i,y[i]);
