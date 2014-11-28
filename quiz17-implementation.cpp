@@ -356,11 +356,11 @@ Path::Path()
 
 	for(i=0;i<n;i++)
 	{
-		cout <<"\nPlease enter the x-coordinate for point #" << i << " of your path";
+		cout <<"\nPlease enter the x-coordinate for point #" << i << " of your path\n";
 		cin >> x[i];
 		fprintf(output,"\nPlease enter the x-coordinate for point #%d of your Path: %.2f",i,x[i]);
 
-		cout <<"\nPlease enter the y-coordinate for point #" << i << " of your path";
+		cout <<"\nPlease enter the y-coordinate for point #" << i << " of your path\n";
 		cin >> y[i];
 		fprintf(output,"\nPlease enter the y-coordinate for point #%d of your Path: %.2f",i,y[i]);
 	}
@@ -394,11 +394,11 @@ void Path::setPath()
 
 	for(i=0;i<n;i++)
 	{
-		cout <<"\nPlease enter the x-coordinate for point #" << i << " of your path";
+		cout <<"\nPlease enter the x-coordinate for point #" << i << " of your path\n";
 		cin >> x[i];
 		fprintf(output,"\nPlease enter the x-coordinate for point #%d of your Path: %.2f",i,x[i]);
 
-		cout <<"\nPlease enter the y-coordinate for point #" << i << " of your path";
+		cout <<"\nPlease enter the y-coordinate for point #" << i << " of your path\n";
 		cin >> y[i];
 		fprintf(output,"\nPlease enter the y-coordinate for point #%d of your Path: %.2f",i,y[i]);
 	}

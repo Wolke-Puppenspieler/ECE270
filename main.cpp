@@ -51,7 +51,7 @@ void draw()
 	Rectangle rect(0,0,0,0);
 	Stroke stroke(0,0,0,0,0);
 	Fill fill(0,0,0,0);
-	Path path(0,0,0);
+	Path path(0,(float*)calloc(1,sizeof(float)),(float*)calloc(1,sizeof(float)));
 	char selection=0;
 
 	menu();
