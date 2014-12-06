@@ -14,6 +14,7 @@ class Fill{
 		Fill(int r_in, int g_in, int b_in, float a_in);
 		Fill();
 		void setFill();
+		void setFill(int r_in, int g_in, int b_in, float a_in);
 		void display();
 };
 
@@ -25,9 +26,10 @@ class Stroke{
 		float opacity; //set opacity 0.0-1.0
 		int width; //set width
 
-		Stroke(int r_in,int g_in, int b_in, float a_in, float width_in);
+		Stroke(int r_in,int g_in, int b_in, float a_in, int width_in);
 		Stroke();
 		void setStroke();
+		void setStroke(int r_in,int g_in, int b_in, float a_in, int width_in);
 };
 
  class Line{

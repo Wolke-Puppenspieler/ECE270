@@ -1,13 +1,13 @@
 # depslib dependency file v1.0
-1417040765 source:c:\users\der meister\documents\github\ece270\main.cpp
+1417442194 source:c:\users\der meister\documents\github\ece270\main.cpp
 	<iostream>
 	<cstdlib>
 	"./quiz17.h"
 	"./quiz17-implementation.cpp"
 
-1417039909 c:\users\der meister\documents\github\ece270\quiz17.h
+1417442047 c:\users\der meister\documents\github\ece270\quiz17.h
 
-1417039340 c:\users\der meister\documents\github\ece270\quiz17-implementation.cpp
+1417442179 c:\users\der meister\documents\github\ece270\quiz17-implementation.cpp
 	<iostream>
 	"./quiz17.h"
 	<stdio.h>

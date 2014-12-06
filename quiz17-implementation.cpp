@@ -57,7 +57,15 @@ void Fill::setFill()
     fprintf(output,"\nPlease enter the desired opacity of shape's fill color (0.0-1.0): %f",opacity);
 }
 
-Stroke::Stroke(int r_in, int g_in, int b_in, float a_in, float width_in)
+void Fill::setFill(int r_in, int g_in, int b_in, float a_in)
+{
+    red=r_in;
+    green=g_in;
+    blue=b_in;
+    opacity=a_in;
+}
+
+Stroke::Stroke(int r_in, int g_in, int b_in, float a_in, int width_in)
 {
 	red=r_in;
 	green=g_in;
@@ -86,8 +94,9 @@ Stroke::Stroke()
 
 	cout << "\nPlease enter the desired width of your shape's Stroke";
     cin >> width;
-    fprintf(output,"\nPlease enter the desired width of shape's Stroke: %.d",width);
+    fprintf(output,"\nPlease enter the desired width of shape's Stroke: %d",width);
 }
+
 void Stroke::setStroke()
 {
     cout << "\nPlease enter the desired amount of red for your shape's Stroke color (0-255)";
@@ -109,6 +118,15 @@ void Stroke::setStroke()
 	cout << "\nPlease enter the desired width of your shape's Stroke";
     cin >> width;
     fprintf(output,"\nPlease enter the desired width of shape's Stroke: %d",width);
+}
+
+void Stroke::setStroke(int r_in, int g_in, int b_in, float a_in, int width_in)
+{
+	red=r_in;
+	green=g_in;
+	blue=b_in;
+	opacity=a_in;
+	width=width_in;
 }
 
 Line::Line(float x1_in, float y1_in, float x2_in, float y2_in)

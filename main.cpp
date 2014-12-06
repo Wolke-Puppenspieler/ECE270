@@ -93,6 +93,31 @@ void draw()
                 path.drawPath(fill,stroke);
                 menu();
 			break;
+			case 'K':case 'k':
+                system("cls");
+				fill.setFill(30,30,30,1.0);
+                stroke.setStroke(0,0,0,0,0);
+                rect.setCorner(0,0);
+                rect.setDimensions(1000,200);
+				rect.drawRect(fill,stroke);
+                fill.setFill(213,43,30,1.0);
+                stroke.setStroke(0,0,0,0,0);
+                rect.setCorner(0,200);
+                rect.setDimensions(1000,200);
+				rect.drawRect(fill,stroke);
+				fill.setFill(254,209,0,1.0);
+                stroke.setStroke(0,0,0,0,0);
+                rect.setCorner(0,400);
+                rect.setDimensions(1000,200);
+				rect.drawRect(fill,stroke);
+                selection='Q';
+                system("cls");
+				cout << "\nProgram terminating...\nenjoy your drawing";
+				fprintf(output,"\nProgram terminating...\nenjoy your drawing");
+
+				cout << "\nYour drawing can be found in image.svg in the same folder as this program";
+				fprintf(output,"\nYour drawing can be found in image.svg in the same folder as this program");y
+            break;
 			case 'Q':case 'q':
 				system("cls");
 				cout << "\nProgram terminating...\nenjoy your drawing";
@@ -113,7 +138,7 @@ void draw()
 void menu()
 {
     cout << "\nWelcome to Justin Newman's ECE270 Quiz #17 C++ SVG drawing program";
-    fprintf(output,"\nWelcome to Justin Newman's ECE270 Quiz #15 SVG drawing program");
+    fprintf(output,"\nWelcome to Justin Newman's ECE270 Quiz #17 C++ SVG drawing program");
 
     cout << "\n\nPlease make your selection from the following menu:";
     fprintf(output,"\n\nPlease make your selection from the following menu:");
@@ -132,6 +157,9 @@ void menu()
 
     cout << "\nQ:\tTo stop drawing";
     fprintf(output,"\nQ:\tTo stop drawing");
+
+    cout << "\nK:\tTo draw a cool pre-defined graphic";
+    fprintf(output,"\nK:\tTo draw a cool pre-defined graphic");
 
     cout << "\n\nPlease enter your selection now:";
     fprintf(output,"\n\nPlease enter your selection now:");
