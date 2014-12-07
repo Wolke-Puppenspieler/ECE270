@@ -1,0 +1,1 @@
+,00,none,01,Normal,02,Fire,03,Water,04,Ice,05,Grass,06,Electric,07,Rock,08,Ground,09,Fighting,10,Bug,11,Poison,12,Flying,13,Psychic,14,Ghost,15,Dragon,
