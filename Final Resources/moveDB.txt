@@ -1,0 +1,166 @@
+001,Pound,01,01,35,40,100
+002,Karate Chop,01,01,25,50,100
+003,Double Slap,01,01,10,15,85
+004,Comet Punch,01,01,15,18,85
+005,Mega Punch,01,01,20,80,85
+006,Pay Day,01,01,20,40,100
+007,Fire Punch,02,01,15,75,100
+008,Ice Punch,04,01,15,75,100
+009,Thunder Punch,06,01,15,75,100
+010,Scratch,01,01,35,40,100
+011,Vice Grip,01,01,30,55,100
+012,Guillotine,01,01,5,999,30
+013,Razor Wind,01,02,10,80,100
+014,Swords Dance,01,03,30,00,00
+015,Cut,01,01,30,50,95
+016,Gust,01,02,35,40,100
+017,Wing Attack,12,01,35,35,100
+018,Whirlwind,01,03,20,00,00
+019,Fly,12,01,15,90,95
+020,Bind,01,01,20,15,85
+021,Slam,01,01,20,80,75
+022,Vine Whip,05,01,10,35,100
+023,Stomp,01,01,20,65,100
+024,Double Kick,09,01,,30,30,100
+025,Mega Kick,01,01,5,120,75
+026,Jump Kick,09,01,10,100,95
+027,Rolling Kick,09,01,15,60,85
+028,Sand-Attack,01,03,15,00,100
+029,Headbutt,01,01,15,70,100
+030,Horn Attack,01,01,25,65,100
+031,Fury Attack,01,01,20,15,85
+032,Horn Drill,01,01,,5,999,30
+033,Tackle,01,01,35,35,95
+034,Body Slam,01,01,15,85,100
+035,Wrap,01,01,20,15,60
+036,Take Down,01,01,20,90,85
+037,Thrash,01,01,20,90,100
+038,Double-Edge,01,01,15,100,100
+039,Tail Whip,01,03,30,00,100
+040,Poison Sting,11,01,35,15,100
+041,Twineedle,10,01,20,25,100
+042,Pin Missile,10,01,20,25,95
+043,Leer,01,03,30,00,100
+044,Bite,01,01,25,60,100
+045,Growl,01,03,40,00,100
+046,Roar,01,03,20,00,100
+047,Sing,01,03,15,00,55
+048,Supersonic,01,03,20,00,55
+049,Sonic Boom,01,02,20,20,90
+050,Disable,01,03,20,00,90
+051,Acid,11,02,30,40,100
+052,Ember,02,02,25,40,100
+053,Flamethrower,02,02,15,95,100
+054,Mist,04,03,30,00,100
+055,Water Gun,03,02,25,40,100
+056,Hydro Pump,03,02,5,120,80
+057,Surf,Water,02,,15,90*,100
+058,Ice Beam,04,02,10,90,100
+059,Blizzard,04,02,,5,120,80
+060,Psybeam,13,02,20,65,100
+-------------------------------------
+061,Bubble Beam,Water,02,,20,65,100
+062,Aurora Beamce,02,,20,65,100
+063,Hyper Beam,01,02,,5,150,90
+064,Peck,Flying,01,,35,35,100
+065,Drill Peck,Flying,01,,20,80,100
+066,Submission,Fighting,01,,25,80,80
+067,Low Kick,Fighting,01,,20,—*,100*
+068,Counter,Fighting,01,,20,—,100
+069,Seismic Toss,Fighting,01,,20,—,100
+070,Strength,01,01,,15,80,100
+071,Absorb,Grass,02,,25*,20,100
+072,Mega Drain,Grass,02,,15*,40,100
+073,Leech Seed,Grass,03,,10,—,90
+074,Growth,01,03,,20*,—,—
+075,Razor Leaf,Grass,01,,25,55,95
+076,Solar Beam,Grass,02,,10,120,100
+077,Poison Powder,Poison,03,,35,—,75
+078,Stun Spore,Grass,03,,30,—,75
+079,Sleep Powder,Grass,03,,15,—,75
+080,Petal Dance,Grass,02,,10*,120*,100
+081,String Shot,Bug,03,,40,—,95
+082,Dragon Rage,Dragon,02,,10,*,100
+083,Fire Spin,Fire,02,,15,35*,85*
+084,Thunder Shock,Electric,02,,30,40,100
+085,Thunderbolt,Electric,02,,15,90*,100
+086,Thunder Wave,Electric,03,,20,—,100
+087,Thunder,Electric,02,,10,110*,70
+088,Rock Throw,Rock,01,,15,50,90*
+089,Earthquake,Ground,01,,10,100,100
+090,Fissure,Ground,01,,5,—,—
+091,Dig,Ground,01,,10,80*,100
+092,Toxic,Poison,03,,10,—,90*
+093,Confusion,Psychic,02,,25,50,100
+094,Psychic,Psychic,02,,10,90,100
+095,Hypnosis,Psychic,03,,20,—,60*
+096,Meditate,Psychic,03,,40,—,—
+097,Agility,Psychic,03,,30,—,—
+098,Quick Attack,01,01,,30,40,100
+099,Rage,01,01,,20,20,100
+100,Teleport,Psychic,03,,20,—,—
+101,Night Shade,Ghost,02,,15,—,100
+102,Mimic,01,03,,10,—,100
+103,Screech,01,03,,40,—,85
+104,Double Team,01,03,,15,—,—
+105,Recover,01,03,,10*,—,—
+106,Harden,01,03,,30,—,—
+107,Minimize,01,03,,10*,—,—
+108,Smokescreen,01,03,,20,—,100
+109,Confuse Ray,Ghost,03,,10,—,100
+110,Withdraw,Water,03,,40,—,—
+111,Defense Curl,01,03,,40,—,—
+112,Barrier,Psychic,03,,20*,—,—
+113,Light Screen,Psychic,03,,30,—,—
+114,Hazece,03,,30,—,—
+115,Reflect,Psychic,03,,20,—,—
+116,Focus Energy,01,03,,30,—,—
+117,Bide,01,01,,10,—,100
+118,Metronome,01,03,,10,—,—
+119,Mirror Move,Flying,03,,20,—,—
+120,Self-Destruct,01,01,,5,200*,100
+121,Egg Bomb,01,01,,10,100,75
+122,Lick,Ghost,01,,30,30*,100
+123,Smog,Poison,02,,20,30*,70
+124,Sludge,Poison,02,,20,65,100
+125,Bone Club,Ground,01,,20,65,85
+126,Fire Blast,Fire,02,,5,110*,85
+127,Waterfall,Water,01,,15,80,100
+128,Clamp,Water,01,,10,35,85*
+129,Swift,01,02,,20,60,—
+130,Skull Bash,01,01,,10*,130*,100
+131,Spike Cannon,01,01,,15,20,100
+132,Constrict,01,01,,35,10,100
+133,Amnesia,Psychic,03,,20,—,—
+134,Kinesis,Psychic,03,,15,—,80
+135,Soft-Boiled,01,03,,10,—,—
+136,High Jump Kick,Fighting,01,,10*,130*,90
+137,Glare,01,03,,30,—,100*
+138,Dream Eater,Psychic,02,,15,100,100
+139,Poison Gas,Poison,03,,40,—,90*
+140,Barrage,01,01,,20,15,85
+141,Leech Life,Bug,01,,15,20,100
+142,Lovely Kiss,01,03,,10,—,75
+143,Sky Attack,Flying,01,,5,140,90
+144,Transform,01,03,,10,—,—
+145,Bubble,Water,02,,30,40*,100
+146,Dizzy Punch,01,01,,10,70,100
+147,Spore,Grass,03,,15,—,100
+148,Flash,01,03,,20,—,100*
+149,Psywave,Psychic,02,,15,—,100*
+150,Splash,01,03,,40,—,—
+151,Acid Armor,Poison,03,,20*,—,—
+152,Crabhammer,Water,01,,10,100*,90*
+153,Explosion,01,01,,5,250*,100
+154,Fury Swipes,01,01,,15,18,80
+155,Bonemerang,Ground,01,,10,50,90
+156,Rest,Psychic,03,,10,—,—
+157,Rock Slide,Rock,01,,10,75,90
+158,Hyper Fang,01,01,,15,80,90
+159,Sharpen,01,03,,30,—,—
+160,Conversion,01,03,,30,—,—
+161,Tri Attack,01,02,,10,80,100
+162,Super Fang,01,01,,10,—,90
+163,Slash,01,01,,20,70,100
+164,Substitute,01,03,,10,—,—
+165,Struggle,01,01,,1*,50,100
