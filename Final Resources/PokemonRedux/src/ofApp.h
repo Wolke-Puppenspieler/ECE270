@@ -27,7 +27,7 @@ class Move{
         void setMove();
 };
 
-class Pokemon{
+/*class Pokemon{
     private:
         int idNum;
         string name;
@@ -44,7 +44,7 @@ class Pokemon{
         Pokemon(int idNum_in, string name_in, int baseHP_in, int baseAtk_in, int baseDef_in, int baseSpd_in, int baseSpec_in, int type1_in, int type2_in, int evoLvl_in, int expClass_in);
         Pokemon();
         void setPoke(int idNum_in, string name_in, int baseHP_in, int baseAtk_in, int baseDef_in, int baseSpd_in, int baseSpec_in, int type1_in, int type2_in, int evoLvl_in, int expClass_in);
-};
+};*/
 
 class BattlePoke{
     private:
@@ -67,7 +67,7 @@ class BattlePoke{
         int spec;
         int faint;//1 or 0
         int isWild;
-        BattlePoke(Pokemon pokemon, int level);
+        BattlePoke(struct Pokemon pokemon, int level);
         //void learnMove(Move newMove);
         void battle(BattlePoke opponent);
 };
