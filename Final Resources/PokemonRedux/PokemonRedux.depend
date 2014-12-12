@@ -1722,13 +1722,19 @@
 
 1415415305 source:c:\openframeworks\apps\myapps\pokemonredux\icon.rc
 
-1418193875 source:c:\openframeworks\apps\myapps\pokemonredux\src\main.cpp
+1418244007 source:c:\openframeworks\apps\myapps\pokemonredux\src\main.cpp
+	<iostream>
+	<string>
 	"ofMain.h"
 	"ofApp.h"
 
-1418194522 c:\openframeworks\apps\myapps\pokemonredux\src\ofapp.h
+1418244007 c:\openframeworks\apps\myapps\pokemonredux\src\ofapp.h
+	<iostream>
+	<string>
 	"ofMain.h"
 
-1418056238 source:c:\openframeworks\apps\myapps\pokemonredux\src\ofapp.cpp
+1418307291 source:c:\openframeworks\apps\myapps\pokemonredux\src\ofapp.cpp
+	<iostream>
+	<string>
 	"ofApp.h"
 
