@@ -3,6 +3,20 @@
 #include <string>
 #include "ofMain.h"
 
+struct Pokemon{
+    int idNum;
+        char name[11];
+        int baseHP;     //base Health Point stat
+        int baseAtk;    //base Attack stat
+        int baseDef;    //base Defense stat
+        int baseSpd;    //base Speed stat
+        int baseSpec;   //base Special stat
+        int type1;      //first elemental type
+        int type2;      //second elemental type
+        int evoLvl;     //level at which pokemon evolves (00 if pokemon does not evolve)
+        int expClass;   //which level/experience ratio to use to determine pokemon level
+};
+
 
 class Effect{
     private:

@@ -2,22 +2,6 @@
 #include <string>
 #include "ofApp.h"
 
-
-
-struct Pokemon{
-    int idNum;
-        char name[10];
-        int baseHP;     //base Health Point stat
-        int baseAtk;    //base Attack stat
-        int baseDef;    //base Defense stat
-        int baseSpd;    //base Speed stat
-        int baseSpec;   //base Special stat
-        int type1;      //first elemental type
-        int type2;      //second elemental type
-        int evoLvl;     //level at which pokemon evolves (00 if pokemon does not evolve)
-        int expClass;   //which level/experience ratio to use to determine pokemon level
-};
-
 struct Pokemon pokedex[152];
 
 //--------------------------------------------------------------
@@ -41,14 +25,19 @@ void ofApp::setup(){
     int idNum, stat1, stat2, stat3, stat4, stat5, type1, type2, evoLvl, expClass;
 	cout << "\ntest";
 
-	fgets(temp,sizeof(temp),fp);
+
+    for(i=0;i<152;i++)
+    {
+        //printf("error\n %d",i); - testing
+
+		fgets(temp,sizeof(temp),fp);
 
         cout << "\ntest";
 		token=strtok(NULL,comma);
         idNum=atoi(strdup(token));
         cout << "\ntest";
 		token=strtok(NULL,comma);
-        string name(strdup(token));
+        strcpy(name,strdup(token));
         cout << "\ntest";
         token=strtok(NULL,comma);
         stat1=atoi(strdup(token));
@@ -88,50 +77,6 @@ void ofApp::setup(){
         pokedex[i].type2=type2;
         pokedex[i].evoLvl=evoLvl;
         pokedex[i].expClass=expClass;
-
-    for(i=1;i<152;i++)
-    {
-        //printf("error\n %d",i); - testing
-
-		fgets(temp,sizeof(temp),fp);
-
-        cout << "\ntest";
-		token=strtok(NULL,comma);
-        idNum=stoi(token);
-        cout << "\ntest";
-		token=strtok(NULL,comma);
-        name(token);
-        cout << "\ntest";
-        token=strtok(NULL,comma);
-        stat1(token);
-        cout << "\ntest";
-		token=strtok(NULL,comma);
-        stat2=*token;
-        cout << "\ntest";
-		token=strtok(NULL,comma);
-        stat3=*token;
-        cout << "\ntest";
-		token=strtok(NULL,comma);
-        strcpy(stat4,strdup(token));
-        cout << "\ntest";
-		token=strtok(NULL,comma);
-        strcpy(stat5,strdup(token));
-        cout << "\ntest";
-		token=strtok(NULL,comma);
-        strcpy(type1,strdup(token));
-
-		token=strtok(NULL,comma);
-        strcpy(type2,strdup(token));
-
-		token=strtok(NULL,comma);
-        strcpy(evoLvl,strdup(token));
-
-		token=strtok(NULL,comma);
-        strcpy(expClass,strdup(token));
-
-        cout << "test";
-
-		pokedex[i].setPoke(idNum, name, stat1, stat2, stat3, stat4, stat5, type1, type2, evoLvl, expClass);
 
 		cout << "test";
 
@@ -228,6 +173,11 @@ void ofApp::dragEvent(ofDragInfo dragInfo){
 
 }
 
+BattlePoke::BattlePoke(struct Pokemon pokemon, int level)
+{
+    maxHP=(pokemon.baseHP;
+    .baseAtk
+}
 /*Pokemon::Pokemon(int idNum_in, string name_in, int baseHP_in, int baseAtk_in, int baseDef_in, int baseSpd_in, int baseSpec_in, int type1_in, int type2_in, int evoLvl_in, int expClass_in)
 {
     idNum=idNum_in;
