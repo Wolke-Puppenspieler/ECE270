@@ -2,8 +2,9 @@
 #include <string>
 #include "ofMain.h"
 #include "ofApp.h"
+#include <time.h>
 
-
+srand(time(NULL));
 //========================================================================
 int main( ){
 	ofSetupOpenGL(160,144,OF_WINDOW);			// <-------- setup the GL context

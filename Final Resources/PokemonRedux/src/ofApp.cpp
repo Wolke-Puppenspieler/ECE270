@@ -173,11 +173,19 @@ void ofApp::dragEvent(ofDragInfo dragInfo){
 
 }
 
-BattlePoke::BattlePoke(struct Pokemon pokemon, int level)
+BattlePoke::BattlePoke(struct Pokemon pokemon, int level_in)
 {
-    maxHP=(pokemon.baseHP;
-    .baseAtk
-}
+    maxHP=(((rand()%32)+pokemon.baseHP+50)*level)/50+10;
+    atkStat=(((rand()%32)+pokemon.baseAtk+50)*level)/50+5;
+    defStat=(((rand()%32)+pokemon.baseDef+50)*level)/50+5;
+    spdStat=(((rand()%32)+pokemon.baseSpd+50)*level)/50+5;
+    specStat=(((rand()%32)+pokemon.baseSpec+50)*level)/50+5;
+    if(pokemon.expClass==1){
+////////////////////        exp=po
+    }
+    level=level_in;
+
+        }
 /*Pokemon::Pokemon(int idNum_in, string name_in, int baseHP_in, int baseAtk_in, int baseDef_in, int baseSpd_in, int baseSpec_in, int type1_in, int type2_in, int evoLvl_in, int expClass_in)
 {
     idNum=idNum_in;
