@@ -22,7 +22,7 @@ void ofApp::setup(){
     int i=0;
 	char *token, comma[2]=",";
 	char  nameChar[11], temp[100];
-    int idNum, stat1, stat2, stat3, stat4, stat5, type1, type2, evoLvl, expClass;
+    int idNum, stat1, stat2, stat3, stat4, stat5, type1, type2, evoLvl, expClass, baseExp;
 	cout << "\ntest";
 
 
@@ -65,6 +65,9 @@ void ofApp::setup(){
 
 		token=strtok(NULL,comma);
         expClass=atoi(strdup(token));
+		
+		token=strtok(NULL,comma);
+        baseExp=atoi(strdup(token));
 
 		pokedex[i].idNum=idNum;
         pokedex[i].name=name;
@@ -77,6 +80,7 @@ void ofApp::setup(){
         pokedex[i].type2=type2;
         pokedex[i].evoLvl=evoLvl;
         pokedex[i].expClass=expClass;
+		pokedex[i].baseExp=baseExp;
 
 		cout << "test";
 
@@ -175,17 +179,35 @@ void ofApp::dragEvent(ofDragInfo dragInfo){
 
 BattlePoke::BattlePoke(struct Pokemon pokemon, int level_in)
 {
-    maxHP=(((rand()%32)+pokemon.baseHP+50)*level)/50+10;
+	
+	level=level_in;
+	maxHP=(((rand()%32)+pokemon.baseHP+50)*level)/50+10;
     atkStat=(((rand()%32)+pokemon.baseAtk+50)*level)/50+5;
     defStat=(((rand()%32)+pokemon.baseDef+50)*level)/50+5;
     spdStat=(((rand()%32)+pokemon.baseSpd+50)*level)/50+5;
     specStat=(((rand()%32)+pokemon.baseSpec+50)*level)/50+5;
-    if(pokemon.expClass==1){
-////////////////////        exp=po
-    }
-    level=level_in;
+	
+	switch(pokemon.expClass)
+	{
+		case 01:
+			exp=1.25*pow(level,3);
+		break;
+		case 02:
+			exp=pow(level,3);
+		break;
+		case 03:
+			exp=.95*pow(level,3);
+		break;
+		case 04:
+			exp=0.8*pow(level,3);
+		break;
+	}
+    
+}
 
-        }
+void BattlePoke::evolve()
+{
+	
 /*Pokemon::Pokemon(int idNum_in, string name_in, int baseHP_in, int baseAtk_in, int baseDef_in, int baseSpd_in, int baseSpec_in, int type1_in, int type2_in, int evoLvl_in, int expClass_in)
 {
     idNum=idNum_in;

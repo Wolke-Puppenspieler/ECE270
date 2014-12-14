@@ -4,17 +4,18 @@
 #include "ofMain.h"
 
 struct Pokemon{
-    int idNum;
-        char name[11];
-        int baseHP;     //base Health Point stat
-        int baseAtk;    //base Attack stat
-        int baseDef;    //base Defense stat
-        int baseSpd;    //base Speed stat
-        int baseSpec;   //base Special stat
-        int type1;      //first elemental type
-        int type2;      //second elemental type
-        int evoLvl;     //level at which pokemon evolves (00 if pokemon does not evolve)
-        int expClass;   //which level/experience ratio to use to determine pokemon level
+	int idNum;
+	char name[11];
+	int baseHP;     //base Health Point stat
+	int baseAtk;    //base Attack stat
+	int baseDef;    //base Defense stat
+	int baseSpd;    //base Speed stat
+	int baseSpec;   //base Special stat
+	int type1;      //first elemental type
+	int type2;      //second elemental type
+	int evoLvl;     //level at which pokemon evolves (00 if pokemon does not evolve)
+	int expClass;   //which level/experience ratio to use to determine pokemon level
+	int baseExp;	//base exp yield upon defeat
 };
 
 
@@ -82,6 +83,7 @@ class BattlePoke{
         int faint;//1 or 0
         int isWild;
         BattlePoke(struct Pokemon pokemon, int level);
+		void evolve();
         //void learnMove(Move newMove);
         void battle(BattlePoke opponent);
 };
