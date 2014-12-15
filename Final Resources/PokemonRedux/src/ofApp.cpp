@@ -1,85 +1,134 @@
 #include <iostream>
 #include <string>
+#include <sstream>
+#include <vector>
 #include "ofApp.h"
 
+using namespace std;
+
+
 struct Pokemon pokedex[152];
+
+//the next 2 functions come courtesy of the infinite wisdom of stackoverflow.com
+int get_int(string s) {
+    stringstream ss(s);
+    int ret;
+    ss >> ret;
+    return ret;
+}
+
+float get_float(string s) {
+    stringstream ss(s);
+    float ret;
+    ss >> ret;
+    return ret;
+}
 
 //--------------------------------------------------------------
 void ofApp::setup(){
 	ifstream pkmnData;
-	myfile.open("pkmnData.txt");
+	pkmnData.open("pkmnData.csv");
 
-	cout << "test";
+	//cout << "test";
 
     //george.loadImage("barrel.png");
-    ralph.loadImage("006.PNG");
+    ralph.loadImage("lordHelix.png");
     larry.loadImage("pallet.bmp");
 
-    cout << "\ntest";
+    //cout << "\ntest";
 
-    int i=0;
-	char *token;
-	char nameChar[11], temp[100];
-    char idNum[4], stat1[3], stat2[3], stat3[3], stat4[3], stat5[3], type1[3], type2[3], evoLvl[3], expClass[3], baseExp[4];
+    int i;
+    string idNum, stat1, stat2, stat3, stat4, stat5, type1, type2, evoLvl, expClass, baseExp;
 	string line;
-	cout << "\ntest";
+
+
+	//cout << "\ntest";
 
     for(i=0;i<152;i++)
     {
-        //printf("error\n %d",i); - testing
+        stringstream ss(line);
+        vector<string> v;
+        string field;
 
-		fgets(temp,sizeof(temp),fp);
+        cout << "\ntest" << field;
 
-        cout << "\ntest";
-		token=strtok(NULL,",");
-        strcpy(idNum,strdup(token));
-        cout << "\ntest";
-		token=strtok(NULL,",");
-        strcpy(pokedex[i].name,strdup(token));
-        cout << "\ntest";
-        token=strtok(NULL,",");
-        strcpy(stat1,strdup(token));
-        cout << "\ntest";
-		token=strtok(NULL,",");
-        strcpy(stat2,strdup(token));
-        cout << "\ntest";
-		token=strtok(NULL,",");
-        strcpy(stat3,strdup(token));
-        cout << "\ntest";
-		token=strtok(NULL,",");
-        strcpy(stat4,strdup(token));
-        cout << "\ntest";
-		token=strtok(NULL,",");
-        strcpy(stat5,strdup(token));
-        cout << "\ntest";
-		token=strtok(NULL,",");
-        strcpy(type1,strdup(token));
+        getline(ss,field,',');
+        idNum=field;
+        v.push_back(field);
 
-		token=strtok(NULL,",");
-        strcpy(type2,strdup(token));
+        cout << "\ntest" << field;
 
-		token=strtok(NULL,",");
-        strcpy(evoLvl,strdup(token));
+        getline(ss,field,',');
+        pokedex[i].name=field;
+        v.push_back(field);
 
-		token=strtok(NULL,",");
-        strcpy(expClass,strdup(token));
+        cout << "\ntest" << field;
 
-		token=strtok(NULL,",");
-        strcpy(baseExp,strdup(token));
+        getline(ss,field,',');
+        stat1=field;
+        v.push_back(field);
 
-		pokedex[i].idNum=atoi(idNum);
-        pokedex[i].baseHP=atoi(stat1);
-        pokedex[i].baseAtk=atoi(stat2);
-        pokedex[i].baseDef=atoi(stat3);
-        pokedex[i].baseSpd=atoi(stat4);
-        pokedex[i].baseSpec=atoi(stat5);
-        pokedex[i].type1=atoi(type1);
-        pokedex[i].type2=atoi(type2);
-        pokedex[i].evoLvl=atoi(evoLvl);
-        pokedex[i].expClass=atoi(expClass);
-		pokedex[i].baseExp=atoi(baseExp);
+        getline(ss,field,',');
+        stat2=field;
+        v.push_back(field);
 
-		cout << "test";
+        getline(ss,field,',');
+        stat3=field;
+        v.push_back(field);
+
+		getline(ss,field,',');
+        stat4=field;
+        v.push_back(field);
+
+        getline(ss,field,',');
+        stat5=field;
+        v.push_back(field);
+
+        getline(ss,field,',');
+        type1=field;
+        v.push_back(field);
+
+        getline(ss,field,',');
+        type2=field;
+        v.push_back(field);
+
+        getline(ss,field,',');
+        evoLvl=field;
+        v.push_back(field);
+
+		getline(ss,field,',');
+        expClass=field;
+        v.push_back(field);
+
+        getline(ss,field,',');
+        baseExp=field;
+        v.push_back(field);
+
+		pokedex[i].idNum=get_int(idNum);
+        pokedex[i].baseHP=get_int(stat1);
+        pokedex[i].baseAtk=get_int(stat2);
+        pokedex[i].baseDef=get_int(stat3);
+        pokedex[i].baseSpd=get_int(stat4);
+        pokedex[i].baseSpec=get_int(stat5);
+        pokedex[i].type1=get_int(type1);
+        pokedex[i].type2=get_int(type2);
+        pokedex[i].evoLvl=get_int(evoLvl);
+        pokedex[i].expClass=get_int(expClass);
+		pokedex[i].baseExp=get_int(baseExp);
+
+        cout << "\n" << pokedex[i].name;
+		cout << "\n" << pokedex[i].idNum;
+        cout << "\n" << pokedex[i].baseHP;
+        cout << "\n" << pokedex[i].baseAtk;
+        cout << "\n" << pokedex[i].baseDef;
+        cout << "\n" << pokedex[i].baseSpd;
+        cout << "\n" << pokedex[i].baseSpec;
+        cout << "\n" << pokedex[i].type1;
+        cout << "\n" << pokedex[i].type2;
+        cout << "\n" << pokedex[i].evoLvl;
+        cout << "\n" << pokedex[i].expClass;
+		cout << "\n" << pokedex[i].baseExp;
+		//cout << "test";
 
     }
 

@@ -5,7 +5,7 @@
 
 struct Pokemon{
 	int idNum;
-	char name[11];
+	string name;
 	int baseHP;     //base Health Point stat
 	int baseAtk;    //base Attack stat
 	int baseDef;    //base Defense stat
