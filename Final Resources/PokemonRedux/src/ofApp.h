@@ -30,11 +30,9 @@ class Effect{
         int spec;
 };
 
-class Move{
-    private:
-        Effect effect;
+/*struct Move{};
         int power;
-        string name;
+        char name[11];
     public:
         Move(Effect effect_in, int pow_in, string name_in);
         Move();
@@ -42,25 +40,33 @@ class Move{
         void setMove();
 };
 
-/*class Pokemon{
+class Attack{
     private:
-        int idNum;
-        string name;
-        int baseHP;     //base Health Point stat
-        int baseAtk;    //base Attack stat
-        int baseDef;    //base Defense stat
-        int baseSpd;    //base Speed stat
-        int baseSpec;   //base Special stat
-        int type1;      //first elemental type
-        int type2;      //second elemental type
-        int evoLvl;     //level at which pokemon evolves (00 if pokemon does not evolve)
-        int expClass;   //which level/experience ratio to use to determine pokemon level
+        int damageType;  // Grass, water, fire,etc
+        int attackType;  // Physical/special
+        int attackGroup; // Damage, drain, lower stat, etc
     public:
-        Pokemon(int idNum_in, string name_in, int baseHP_in, int baseAtk_in, int baseDef_in, int baseSpd_in, int baseSpec_in, int type1_in, int type2_in, int evoLvl_in, int expClass_in);
-        Pokemon();
-        void setPoke(int idNum_in, string name_in, int baseHP_in, int baseAtk_in, int baseDef_in, int baseSpd_in, int baseSpec_in, int type1_in, int type2_in, int evoLvl_in, int expClass_in);
-};*/
+       Attack()
 
+
+
+};
+class Damage{
+
+};
+
+class Drain{
+
+};
+
+class LowerStat{
+
+};
+
+class Heal{
+
+};
+*/
 class BattlePoke{
     private:
         int maxHP;

@@ -1,3 +1,2 @@
-ofxAssimpModelLoader
 ofxGui
-ofxThreadedImageLoader
+ofxXmlSettings

@@ -4,9 +4,9 @@
 #include "ofApp.h"
 #include <time.h>
 
-srand(time(NULL));
 //========================================================================
 int main( ){
+    srand(time(NULL));
 	ofSetupOpenGL(160,144,OF_WINDOW);			// <-------- setup the GL context
 
 	// this kicks off the running of my app
