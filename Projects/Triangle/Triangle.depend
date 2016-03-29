@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1410400598 source:c:\users\der meister\documents\school\ece270\projects\triangle\main.c
+	<stdio.h>
+	<stdlib.h>
+

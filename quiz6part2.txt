@@ -1,76 +1,121 @@
 Hangman Game
 
-Please enter a word for the player to guess: won
+Please enter a word for the player to guess: george
 
-Please enter how many guesses the player should get: 5
+Please enter how many guesses the player should get: 6
 Begin Game!
 
 Try # 1
-Guess a letter: w
-w--
+Guess a letter: g
+g---g-
 
 Try # 2
+Guess a letter: k
+g---g-
+
+Try # 3
+Guess a letter: j
+|--------------------|
+|                    |
+|                  |   |
+|                  |   |
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+g---g-
+
+Try # 4
+Guess a letter: m
+|--------------------|
+|                    |
+|                  |   |
+|                  |   |
+|                    |
+|              |-|-------|
+|              | |       |
+|              | |       |
+|              | |       |
+|              m |       |
+|                 ------- 
+|
+|
+|
+|
+|
+|
+g---g-
+
+Try # 5
+Guess a letter: h
+|--------------------|
+|                    |
+|                  |   |
+|                  |   |
+|                    |
+|              |-|-------|-|
+|              | |       | |
+|              | |       | |
+|              | |       | |
+|              m |       | m
+|                 -------   
+|                |
+|                |
+|                |
+|                |
+|                b
+|
+g---g-
+
+Try # 6
 Guess a letter: i
 |--------------------|
 |                    |
 |                  |   |
 |                  |   |
 |                    |
-|                |-------|
+|              |-|-------|-|
+|              | |       | |
+|              | |       | |
+|              | |       | |
+|              m |       | m
+|                 -------   
 |                |       |
 |                |       |
 |                |       |
 |                |       |
-|                 ------- 
+|                b       b
 |
-|
-|
-|
-|
-|
-w--
+g---g-
+Sorry, you lost
 
-Try # 3
-Guess a letter: o
 |--------------------|
 |                    |
-|                  |   |
-|                  |   |
+|                  |x x|
+|                  | o |
 |                    |
-|                |-------|
+|              |-|-------|-|
+|              | | Y O U | |
+|              | |       | |
+|              | | LOST..| |
+|              m |       | m
+|                 -------   
 |                |       |
 |                |       |
 |                |       |
 |                |       |
-|                 ------- 
+|                b       b
 |
-|
-|
-|
-|
-|
-wo-
 
-Try # 4
-Guess a letter: n
-|--------------------|
-|                    |
-|                  |   |
-|                  |   |
-|                    |
-|                |-------|
-|                |       |
-|                |       |
-|                |       |
-|                |       |
-|                 ------- 
-|
-|
-|
-|
-|
-|
-won
-Congrats, You WIN!!
+ Your guess:          g---g-
 
-Won in 4 guesses
+The mystery word was: george
